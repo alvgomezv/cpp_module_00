@@ -2,6 +2,7 @@
 # define CONTACT_HPP
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 
 
@@ -18,7 +19,8 @@ class Contact
         Contact(void);
         ~Contact(void);
 
-        void    set_values(void);
+        void    	set_values(void);
+		std::string	get_value(std::string value);
 };
 
 # endif

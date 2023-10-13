@@ -16,7 +16,7 @@ class PhoneBook
 
     void    add_contact(void);
     void    search_contact(void);
+	void	print_header(void);
 };
-
 
 #endif
