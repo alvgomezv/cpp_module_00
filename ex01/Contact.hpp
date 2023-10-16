@@ -20,7 +20,7 @@ class Contact
         ~Contact(void);
 
         void    	set_values(void);
-		std::string	get_value(std::string value);
+		std::string	get_value(std::string value) const;
 };
 
 # endif

@@ -1,7 +1,7 @@
 CPP = g++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = Account.cpp test.cpp
+SRCS = Account.cpp prueba.cpp
 OBJS = $(SRCS:.cpp=.o)
 NAME = test
 
