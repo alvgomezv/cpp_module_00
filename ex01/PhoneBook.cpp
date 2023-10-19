@@ -5,36 +5,34 @@ int PhoneBook::_count = 0;
 
 PhoneBook::PhoneBook(void)
 {
-    //std::cout << "PhoneBook constructor called" << std::endl;
-    this->_count = 0;
-    return ;
+	this->_count = 0;
+	return ;
 }
 
 PhoneBook::~PhoneBook(void)
 {
-    //std::cout << "PhoneBook destructor called" << std::endl;
-    return ;
+	return ;
 }
 
 void    PhoneBook::add_contact(void)
 {
-    this->_contacts[_count % 8].set_values();
-    _count++;
+	this->_contacts[_count % 8].set_values();
+	_count++;
 }
 
 void    PhoneBook::search_contact(void)
 {
-    std::string str;
+	std::string str;
 	int			max_i;
 	
 	if (this->_count == 0)
-    {
-        std::cout << std::endl;
+	{
+		std::cout << std::endl;
 		std::cout << "The PhoneBook is empty." << std::endl;
 		std::cout << std::endl;
 		return ;
-    }
-    std::cout << "|-------------------------------------------|" << std::endl;
+	}
+	std::cout << "|-------------------------------------------|" << std::endl;
 	std::cout << "|     Index|First Name| Last Name|  Nickname|" << std::endl;
 	std::cout << "|-------------------------------------------|" << std::endl;
 	if (_count < 8)
